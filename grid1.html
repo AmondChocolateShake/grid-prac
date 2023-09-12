@@ -34,8 +34,21 @@
     .container{
         display: grid;
         height: 500px;
-        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "a a a"
+        "b b b"
+        "c d e"
+        ;
+
     }
+    li:nth-child(1){grid-area: a;}
+    li:nth-child(2){grid-area: b;}
+    li:nth-child(3){grid-area: c;}
+    li:nth-child(4){grid-area: d;}
+    li:nth-child(5){grid-area: e;}
+
+
 
 
 </style>
@@ -47,7 +60,6 @@
         <li class="item">3</li>
         <li class="item">4</li>
         <li class="item">5</li>
-        <li class="item">6</li>
 
     </ul>
 
